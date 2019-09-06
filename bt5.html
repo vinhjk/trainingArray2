@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt("Enter length of arrays:");
+    let i, j;
+    let arr1 = new Array();
+    let arr2 = new Array();
+    for (i = 0; i < n; i++) {
+        arr1[i] = prompt("Enter values of array1 :");
+    }
+    for (j = 0; j < n; j++) {
+        arr2[j] = prompt("Enter values of array2 :");
+    }
+    var x = (JSON.stringify(arr1) == JSON.stringify(arr2));
+    if (x.valueOf() === true) {
+        alert("2 arrays have the same values !");
+    } else alert("It not the same thing !");
+</script>
+</body>
+</html>

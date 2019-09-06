@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check() {
+        const num = window.prompt();
+        const str = num.toString();
+        const result = [str[0]];
+
+        for (let x = 1; x < str.length; x++) {
+            if ((str[x] === " ")) {
+                result.push('_', str[x]);
+                result.splice(x+1,1);
+            } else {
+                result.push(str[x]);
+            }
+        }
+        console.log(result.join(""));
+    }
+    check();
+</script>
+</body>
+</html>
